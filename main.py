@@ -22,6 +22,7 @@ class CreateAdvertisement(BaseModel):
 
 advertisements = []
 
+
 @app.post("/advertisement", response_model=Advertisement)
 def create_advertisement(ad: CreateAdvertisement):
     new_ad = Advertisement(
