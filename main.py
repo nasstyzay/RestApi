@@ -36,6 +36,7 @@ def create_advertisement(ad: CreateAdvertisement):
     advertisements.append(new_ad)
     return new_ad
 
+
 @app.patch("/advertisement/{advertisement_id}", response_model=Advertisement)
 def update_advertisement(advertisement_id: UUID, ad: CreateAdvertisement):
     for advertisement in advertisements:
